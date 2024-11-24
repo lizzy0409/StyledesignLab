@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style Design Lab</title>
+  <link rel="stylesheet" href="./styles/top.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .topic {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+
+    header .view-more:hover {
+      color: #aaa;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 10px 15px;
+    }
+
+    .card-content h2 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header style="padding: 0px">
+    <nav>
+      <div style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 91px;
+            padding-bottom: 91px;
+            padding-left: 120px;
+            padding-right: 120px;
+          ">
+        <div>
+          <div style="display: flex; align-items: center">
+            <div>
+              <img src="./assets/images/style-design-logo.png" alt="" style="height: 70px" />
+            </div>
+            <div style="padding-left: 20px">
+              <img src="./assets/images/style-design-text.png" alt="" style="height: 49.83px; width: 316px" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: center">
+            <div>
+              <img src="./assets/images/mail.png" alt="" style="width: 40px; height: 30px" />
+            </div>
+            <div style="padding-left: 72px; padding-right: 72px">
+              <a href="tel:055-270-1405" style="text-decoration: none; color: #000000">
+                <img src="./assets/images/icons/phone.svg" alt="" style="width: 40px; height: 30px" />
+              </a>
+            </div>
+            <div>
+              <img src="./assets/images/mail.png" alt="" style="width: 40px; height: 30px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section style="
+        background-image: url(./assets/images/hero-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1360px;
+      ">
+    <div style="
+          display: flex;
+          align-items: end;
+          height: 100%;
+          padding-bottom: 176px;
+          padding-left: 117px;
+          padding-right: 117px;
+        ">
+      <h2>Style Design Lab</h2>
+    </div>
+  </section>
+
+  <!--  -->
+  <section>
+    <div style="padding-top: 406px">
+      <div style="display: flex; justify-content: center">
+        <img src="./assets/images/hand-drawn.png" alt="手描きキャッチコピー" style="width: 510px" />
+      </div>
+    </div>
+  </section>
+
+  <!-- style design text section -->
+  <section style="display: flex; justify-content: center; padding-top: 120px">
+    <div style="width: 637px">
+      <h2 style="text-align: center">Style Design Lab</h2>
+      <h3 style="text-align: center">
+        － 暮らしを描き 新たなアイデアを生み出す場所 －
+      </h3>
+      <div style="padding-top: 40px">
+        <p>
+          私たちは見えない想いに寄り添い、想い描く暮らしを共に1棟の住宅というカタチで表現します。
+        </p>
+        <p>
+          専門的なアドバイスやサポートができるように、大工・建築士・不動産スタッフ・エクステリア技師を揃え、一人ひとりにあった最適なプランのご提案が可能です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 400px">
+    <div>
+      <img src="./assets/images/import-photo2.png" alt="" style="height: 880px; width: -webkit-fill-available" />
+    </div>
+  </section>
+
+
+  <section style="background-color: #3C3D3D;">
+    <div style="display: flex;" >
+      <div>
+        <h1 class="topic">TOPICE</h1>
+
+      </div>
+
+      <div>
+        <div>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

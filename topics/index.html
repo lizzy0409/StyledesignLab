@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Design Lab</title>
+    <link rel="stylesheet" href="./styles/top.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            .tab-container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+    
+            .tabs {
+                display: flex;
+                gap: 16px;
+                
+            }
+    
+            .tab-button {
+                padding-left: 21px;
+                padding-right: 21px;
+                border: 1px solid #8E918C;
+                background: transparent;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                height: 32px;
+                color: #8E918C;
+            }
+    
+            .tab-button.active {
+                background: #8E918C;
+                color: #F0F3F5;
+            }
+    
+            .tab-content {
+                display: none;
+                
+            }
+    
+            .tab-content.active {
+                display: block;
+            }
+    
+            .pagination {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
+    
+            .pagination button {
+                padding: 5px 10px;
+                border: 1px solid #ddd;
+                background: #fff;
+                cursor: pointer;
+            }
+    
+            .pagination button.active {
+                background: #3C3D3D;
+                color: #F0F3F5;
+            }
+        </style>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header style="padding: 0px;">
+        <nav>
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; padding-top: 91px; padding-bottom: 91px; padding-left: 120px; padding-right: 120px;">
+                <div>
+                    <div style="display: flex;  align-items: center;">
+                        <div>
+                            <img src="./assets/images/style-design-logo.png" alt="" style="height: 70px;" />
+                        </div>
+                        <div style="padding-left: 20px;">
+                            <img src="./assets/images/style-design-text.png" alt=""
+                                style="height: 49.83px; width: 316px;" />
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div style="display: flex; align-items:center ;">
+                        <div>
+                            <img src="./assets/images/mail.png" alt="" style="width: 40px; height: 30px;" />
+                        </div>
+                        <div style="padding-left: 72px; padding-right: 72px;">
+                            <img src="./assets/images/call-icon.png" alt="" style="width: 40px; height: 40px;" />
+                        </div>
+                        <div>
+                            <img src="./assets/images/toggle-icon.png" alt="" style="width: 40px; height: 23px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div style="width: 737px;">
+            <h1 style="font-size: 184px; color: #8E918C;">TOPICS</h1>
+            <h2 style="display: flex; justify-content: center; margin-top: -100px;">お知らせ</h2>
+        </div>
+    </section>
+
+
+    <section style="margin-top: 160px;">
+        <div style="display: flex; justify-content: center; align-items: center;" >
+            <div style="padding-right: 64px;">
+                <p>CATEGORY</p>
+            </div>
+            <div>
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="all">All</button>
+                    <button class="tab-button" data-tab="tab1">イベント情報</button>
+                    <button class="tab-button" data-tab="tab2">土地/売地</button>
+                    <button class="tab-button" data-tab="tab3">NEWS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="margin-top: 40px;">
+        <div style="margin-left: 320px; margin-right: 320px;">
+            <div id="all" class="tab-content active">
+                <div style="display: flex; justify-content: space-between;" >
+                    <div style="padding-top: 160px;">
+                        <div style="width: 373px;">
+                            <div>
+                                <img src="./assets/images/img1.png" alt="" style=" height: 467px;" />
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <p style="padding-top: 16px;">南アルプス市田島　販売開始</p>
+                                    <div >
+                                        <p style="border: 1px solid #8E918C; padding-top: 8px;">土地/売地</p>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 160px;">
+                        <div style="width: 373px;">
+                            <div>
+                                <img src="./assets/images/img1.png" alt="" style=" height: 467px;" />
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <p style="padding-top: 16px;">南アルプス市田島　販売開始</p>
+                                    <div >
+                                        <p style="border: 1px solid #8E918C; padding-top: 8px;">土地/売地</p>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 160px;">
+                        <div style="width: 373px;">
+                            <div>
+                                <img src="./assets/images/img1.png" alt="" style=" height: 467px;" />
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <p style="padding-top: 16px;">南アルプス市田島　販売開始</p>
+                                    <div >
+                                        <p style="border: 1px solid #8E918C; padding-top: 8px;">土地/売地</p>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            
+        </div>
+       
+    </section>
+    <!-- <div class="tab-container">
+        <div id="all" class="tab-content active">
+            <h2>All Content</h2>
+            <div id="all-content"></div>
+            <div id="all-pagination" class="pagination"></div>
+        </div>
+
+        <div id="tab1" class="tab-content">
+            <h2>Content for Tab 1</h2>
+            <div id="tab1-content"></div>
+            <div id="tab1-pagination" class="pagination"></div>
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <h2>Content for Tab 2</h2>
+            <div id="tab2-content"></div>
+            <div id="tab2-pagination" class="pagination"></div>
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <h2>Content for Tab 3</h2>
+            <div id="tab3-content"></div>
+            <div id="tab3-pagination" class="pagination"></div>
+        </div>
+    </div> -->
+
+
+   <section style="margin-top:400px; margin-bottom: 400px;">
+    <div>
+
+    </div>
+   </section>
+   
+    <footer style="background-color: #3C3D3D; padding-left: 124px; padding-right: 124px;">
+        <div style="padding-top: 160px; padding-bottom: 160px; ">
+            <div style="display: flex; justify-content: space-between; width: 1280px; margin: auto;">
+                <div style="width: 384px; background-color: #F0F3F5; ">
+                    <p style="padding-top: 28px; padding-bottom: 28px; text-align: center;">資料請求</p>
+                </div>
+                <div style="width: 384px; background-color: #F0F3F5;  ">
+                    <p style="padding-top: 28px; padding-bottom: 28px; text-align: center;">資料請求</p>
+                </div>
+                <div style="width: 384px; background-color: #F0F3F5; ">
+                    <p style="padding-top: 28px; padding-bottom: 28px; text-align: center;">資料請求</p>
+                </div>
+
+            </div>
+            <div style="height: 1px; background-color: #F0F3F5; margin-top: 80px; margin-bottom: 80px;">
+
+            </div>
+            <div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div>
+                        <i class="fa-brands fa-instagram fa-2x" style="color: #F0F3F5;"></i>
+                    </div>
+                    <div style="padding-left: 40px;">
+                        <img src="./assets/images/at-home.png" alt="alt-home" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="width: 1017px; margin: auto; padding-top: 84px;">
+                    <ul style="list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F0F3F5;">
+                        <li>HOME</li>
+                        <li>CONPANY</li>
+                        <li>WORKS</li>
+                        <li>WORK FLOW</li>
+                        <li>TOPICS</li>
+                        <li>RECRUIT</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="padding-bottom: 84px;">
+            <p style="color: #F0F3F5; text-align: center;">©︎Style Design Lab.</p>
+        </div>
+    </footer>
+
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        // Sample data for all tabs
+        const tabData = {
+            tab1: Array.from({length: 20}, (_, i) => `Tab 1 Item ${i + 1}`),
+            tab2: Array.from({length: 15}, (_, i) => `Tab 2 Item ${i + 1}`),
+            tab3: Array.from({length: 10}, (_, i) => `Tab 3 Item ${i + 1}`)
+        };
+
+        // Combine all data for "All" tab
+        const allData = [
+            ...tabData.tab1.map(item => ({ tab: 'Tab 1', content: item })),
+            ...tabData.tab2.map(item => ({ tab: 'Tab 2', content: item })),
+            ...tabData.tab3.map(item => ({ tab: 'Tab 3', content: item }))
+        ];
+
+        const itemsPerPage = 5;
+        const currentPages = {
+            all: 1,
+            tab1: 1,
+            tab2: 1,
+            tab3: 1
+        };
+
+        function showPage(tabId, page) {
+            const data = tabId === 'all' ? allData : tabData[tabId];
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = data.slice(start, end);
+
+            const contentDiv = document.getElementById(`${tabId}-content`);
+            if (tabId === 'all') {
+                contentDiv.innerHTML = pageItems.map(item => 
+                    `<p>${item.tab} - ${item.content}</p>`
+                ).join('');
+            } else {
+                contentDiv.innerHTML = pageItems.map(item => `<p>${item}</p>`).join('');
+            }
+
+            updatePagination(tabId, page, data.length);
+        }
+
+        function updatePagination(tabId, currentPage, totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const paginationDiv = document.getElementById(`${tabId}-pagination`);
+            
+            let paginationHTML = '';
+            for(let i = 1; i <= totalPages; i++) {
+                paginationHTML += `
+                    <button class="${i === currentPage ? 'active' : ''}" 
+                            onclick="showPage('${tabId}', ${i})">${i}</button>
+                `;
+            }
+            paginationDiv.innerHTML = paginationHTML;
+        }
+
+        // Initialize all tabs with their first page
+        showPage('all', 1);
+        Object.keys(tabData).forEach(tabId => {
+            showPage(tabId, 1);
+        });
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
