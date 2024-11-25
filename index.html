@@ -13,69 +13,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .topic {
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        font-size: 24px;
-        font-weight: bold;
-        margin: 0;
-      }
-
-      header .view-more:hover {
-        color: #aaa;
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-      }
-
-      .card {
-        background-color: #1c1c1c;
-        border-radius: 8px;
-        overflow: hidden;
-        text-align: center;
-      }
-
-      .card img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .card-content {
-        padding: 10px 15px;
-      }
-
-      .card-content h2 {
-        font-size: 18px;
-        margin: 10px 0;
-      }
-
-      .card-content p {
-        font-size: 14px;
-        margin: 5px 0;
-      }
-
-      .tag {
-        display: inline-block;
-        background-color: #333;
-        color: #fff;
-        font-size: 12px;
-        padding: 5px 10px;
-        border-radius: 4px;
-        margin-top: 10px;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -327,22 +269,39 @@
 
     <!-- hero section -->
     <section class="hero-section">
-      <div>
+      <div class="swiper-container swiper-fade">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              alt="Image 1"
+              class="size-full object-cover"
+              src="/assets/images/hero-image.png"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              alt="Image 2"
+              class="size-full object-cover"
+              src="/assets/images/hero-image2.png"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              alt="Image 3"
+              class="size-full object-cover"
+              src="/assets/images/hero-image3.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="content">
         <h2>Style Design Lab</h2>
       </div>
     </section>
 
     <!--  -->
-    <section>
-      <div style="padding-top: 406px">
-        <div style="display: flex; justify-content: center">
-          <img
-            src="./assets/images/hand-drawn.png"
-            alt="手描きキャッチコピー"
-            style="width: 510px"
-          />
-        </div>
-      </div>
+    <section class="section-center">
+      <img src="./assets/images/hand-drawn.png" alt="手描きキャッチコピー" />
     </section>
 
     <!-- style design text section -->
@@ -360,9 +319,92 @@
             専門的なアドバイスやサポートができるように、大工・建築士・不動産スタッフ・エクステリア技師を揃え、一人ひとりにあった最適なプランのご提案が可能です。
           </p>
         </div>
-        <button class="btn">
-          <a href="#">ABOUT</a>
-        </button>
+        <div class="button-container1">
+          <button class="btn">
+            <a href="#">ABOUT</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contents-sec">
+      <div class="swiper-container swiper-fade">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="img-wrapper">
+              <img
+                src="/assets/images/top/top-content-img01.png"
+                alt="top-content-img01"
+              />
+            </div>
+            <div class="content-txt">
+              <span>01</span>
+              <h5>新築 - 家づくり</h5>
+              <h3>Style Design Lab</h3>
+              <p>スタイルデザインラボと建てる家</p>
+              <button class="btn1">
+                <a href="#">VIEW ALL</a>
+              </button>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="img-wrapper">
+              <img
+                src="/assets/images/top/top-content-img02.png"
+                alt="top-content-img02"
+              />
+            </div>
+            <div class="content-txt">
+              <span>02</span>
+              <h5>土地の提案</h5>
+              <h3>Land Proposal</h3>
+              <p>土地から提案ができる家づくり</p>
+              <button class="btn1">
+                <a href="#">VIEW ALL</a>
+              </button>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="img-wrapper">
+              <img
+                class="pc-only"
+                src="/assets/images/top/top-content-img03.png"
+                alt="top-content-img03"
+              />
+            </div>
+            <div class="content-txt">
+              <span>03</span>
+              <h5>リノベーション</h5>
+              <h3>Design×Renovation</h3>
+              <p>それぞれの新しいカタチをご提案</p>
+              <button class="btn1">
+                <a href="#">VIEW ALL</a>
+              </button>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="img-wrapper">
+              <img
+                class="pc-only"
+                src="/assets/images/top/top-content-img04.png"
+                alt="top-content-img04"
+              />
+            </div>
+            <div class="content-txt">
+              <span>04</span>
+              <h5>外 構</h5>
+              <h3>Exterior</h3>
+              <p>暮らしに溶け込む庭づくり</p>
+              <button class="btn1">
+                <a href="#">VIEW ALL</a>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="varticles-pagination">
+          <p>PICK UP</p>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
 
@@ -376,21 +418,205 @@
       </div>
     </section>
 
-    <section style="background-color: #3c3d3d">
-      <div style="display: flex">
-        <div>
-          <h1 class="topic">TOPICE</h1>
-        </div>
+    <section class="contact-sec">
+      <div>
+        <h3>資料請求・ご相談</h3>
+        <p>Request Documents・Contact Us</p>
+      </div>
+      <div>
+        <p>
+          経験豊富なスタッフが
+          <br />
+          住宅に関することの疑問や相談に何でも答え
+          <br class="pc-only" />
+          させていただきます。
+        </p>
+        <p>
+          家づくりの一歩目に。
+          <br />
+          資料請求やご相談はお気軽にどうぞ。
+        </p>
+      </div>
+      <a class="btn4" href="#">
+        <span>資料請求・ご相談はこちら</span>
+      </a>
+    </section>
 
-        <div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+    <section class="company-sec">
+      <div>
+        <div
+          style="
+            transform: rotate(90deg);
+            transform-origin: 0 0;
+            text-align: center;
+            color: #8e918c;
+            font-size: 20px;
+            font-family: Koburina Gothic Std;
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 3.2px;
+            word-wrap: break-word;
+          "
+        >
+          COMPANY INFO
         </div>
       </div>
+      <ul class="container-sm">
+        <li>
+          <span>
+            <img
+              src="./assets/images/icons/next-btn-icon-fill.svg"
+              alt="next-btn-icon-fill"
+            />
+          </span>
+          <img
+            class="pc-only"
+            src="./assets/images/top/top-company-img01.png"
+            alt="top-company-img01"
+          />
+          <div>
+            <p>COMPANY</p>
+            <h5>企業情報</h5>
+          </div>
+        </li>
+        <li>
+          <span>
+            <img
+              src="./assets/images/icons/next-btn-icon-fill.svg"
+              alt="next-btn-icon-fill"
+            />
+          </span>
+          <img
+            class="pc-only"
+            src="./assets/images/top/top-company-img02.png"
+            alt="top-company-img02"
+          />
+          <div>
+            <p>WORK FLOW</p>
+            <h5>家づくりの流れ</h5>
+          </div>
+        </li>
+        <li>
+          <span>
+            <img
+              src="./assets/images/icons/next-btn-icon-fill.svg"
+              alt="next-btn-icon-fill"
+            />
+          </span>
+          <img
+            class="pc-only"
+            src="./assets/images/top/top-company-img03.png"
+            alt="top-company-img03"
+          />
+          <div>
+            <p>RECRUIT</p>
+            <h5>採用情報</h5>
+          </div>
+        </li>
+      </ul>
     </section>
+
+    <footer style="background-color: var(--primary-bg)">
+      <div
+        class="desktop-footer mobile-footer"
+        style="max-width: 1676px; margin: auto"
+      >
+        <div class="footer-buttons container">
+          <div class="footer-button">資料請求</div>
+          <div class="footer-button">資料請求</div>
+          <div class="footer-button">資料請求</div>
+        </div>
+
+        <hr
+          style="
+            border: none;
+            height: 1px;
+            background-color: var(--primary-text);
+            margin: 80px 0;
+          "
+        />
+
+        <div class="desktop-text" style="text-align: center">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 40px;
+            "
+          >
+            <i
+              class="fa-brands fa-instagram fa-2x"
+              style="color: var(--primary-text)"
+            ></i>
+            <img src="../assets/images/at-home.png" alt="At Home" />
+          </div>
+        </div>
+        <div class="mobile-view" style="text-align: center">
+          <div>
+            <i
+              class="fa-brands fa-instagram fa-2x"
+              style="color: var(--primary-text)"
+            ></i>
+          </div>
+          <div style="padding-top: 16px">
+            <img src="../assets/images/at-home.png" alt="At Home" />
+          </div>
+        </div>
+
+        <nav
+          class="footer-nav desktop-text"
+          style="max-width: 1017px; margin: auto; padding-top: 84px"
+        >
+          <ul>
+            <li>
+              <a href="/index.html">HOME</a>
+            </li>
+            <li>
+              <a href="./company/index.html"> CONPANY </a>
+            </li>
+            <li>WORKS</li>
+            <li>WORK FLOW</li>
+            <li>TOPICS</li>
+            <li>RECRUIT</li>
+            <li>CONTACT</li>
+          </ul>
+        </nav>
+
+        <div
+          class="mobile-text"
+          style="
+            justify-content: space-around;
+            padding-top: 80px;
+            color: var(--primary-text);
+          "
+        >
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="padding-bottom: 11px">HOME</li>
+            <li style="padding-bottom: 11px">WORKS</li>
+            <li style="padding-bottom: 11px">TOPICS</li>
+            <li style="padding-bottom: 11px">CONTACT</li>
+          </ul>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="padding-bottom: 11px">CONPANY</li>
+            <li style="padding-bottom: 11px">WORK FLOW</li>
+            <li style="padding-bottom: 11px">RECRUIT</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center; color: var(--primary-text)">
+        <p class="desktop-text" style="padding-bottom: 84px; margin: 0">
+          ©︎ Style Design Lab.
+        </p>
+        <p
+          class="mobile-text"
+          style="padding-bottom: 63px; margin: 0; justify-content: center"
+        >
+          ©︎ Style Design Lab.
+        </p>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
