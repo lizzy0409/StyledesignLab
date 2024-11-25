@@ -29,7 +29,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .swiper-slide {
@@ -141,7 +141,7 @@ section.contents-sec {
 
 section.contents-sec .swiper-container {
   position: unset;
-  margin-left: 240px;
+  padding-left: 240px;
   margin-right: 0;
 }
 
@@ -161,8 +161,9 @@ section.contents-sec
   .swiper-slide
   div.content-txt {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  display: grid;
+  left: -40px;
+  top: 85%;
 }
 
 section.contents-sec .swiper-container > div {
@@ -235,6 +236,7 @@ section.company-sec > div {
 section.company-sec > ul {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
   column-gap: 0;
   row-gap: 0;
 }
@@ -321,6 +323,18 @@ button {
   border: 0;
 }
 
+.company-sec ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.company-sec ul li span img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-section .content h2 {
@@ -336,7 +350,7 @@ button {
 
   section.contents-sec .swiper-container {
     position: unset;
-    margin-left: 40px;
+    padding-left: 40px;
     margin-right: 0;
   }
 
@@ -366,6 +380,60 @@ button {
     letter-spacing: 0.7px;
     color: #f0f3f5;
     background-color: #8e918c;
+  }
+  section.company-sec > ul {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    column-gap: 0;
+    row-gap: 8px;
+    max-width: 326px;
+  }
+  section.contents-sec
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    div.content-txt {
+    position: absolute;
+    top: 85%;
+    left: -30px;
+    display: grid;
+    bottom: 0;
+  }
+  section.contents-sec
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    div.content-txt
+    span {
+    width: 22px;
+    text-decoration: underline;
+  }
+
+  section.contents-sec
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    div.content-txt
+    h5 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  section.contents-sec
+    .swiper-container
+    .swiper-wrapper
+    .swiper-slide
+    div.content-txt
+    div {
+    display: flex;
+    justify-content: start;
+    margin-top: 0px;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
   }
 }
 
