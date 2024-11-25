@@ -1,0 +1,19 @@
+.main-title {
+    font-size: 184px;
+    color: var(--accent-color);
+    margin: 0;
+    font-weight: 250;
+    line-height: 368px;
+  }
+  .top-button {
+    padding: 44px;
+  }
+  @media (max-width: 768px) {
+    .main-title {
+        font-size: 48px;
+        line-height: 96px;
+      }
+      .top-button {
+        padding: 22px;
+      }
+  }

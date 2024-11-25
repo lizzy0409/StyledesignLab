@@ -1,0 +1,198 @@
+
+
+  .mobile-view{
+    display: none;
+  }
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 91px 120px;
+  }
+  
+  .logo-container,
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icons {
+    gap: 72px;
+  }
+  
+  .main-title {
+    font-size: 184px;
+    color: var(--accent-color);
+    margin: 0;
+    font-weight: 250;
+    line-height: 368px;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-button {
+    flex: 1;
+    background-color: var(--primary-text);
+    padding: 28px;
+    text-align: center;
+  }
+  
+  .footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-text);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .desktop-text {
+    display: block;
+  }
+  
+  .mobile-text {
+    display: none;
+  }
+  
+  .desktop-footer {
+    padding: 160px 20px;
+  }
+  
+  .catlog-section {
+    margin-bottom: 560px;
+  }
+  
+  .catlog-text {
+    padding: 200px 0;
+  }
+  
+  .top-button {
+    padding: 44px;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: fit-content;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container:hover {
+    background-color: #555;
+  }
+  
+  .button-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .button-icon svg {
+    stroke: #fff;
+    width: 16px;
+    height: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 32px;
+    }
+    .mobile-view{
+      display: block;
+    }
+    .header-container {
+      padding: 24px 16px;
+    }
+  
+    .logo-container {
+      margin-bottom: 20px;
+    }
+  
+    .nav-icons {
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    .main-title {
+      font-size: 48px;
+      line-height: 96px;
+    }
+  
+    .catlog-section {
+      margin-bottom: 160px;
+    }
+  
+    .catlog-text {
+      padding: 32px 0 56px;
+    }
+  
+    .top-button {
+      padding: 22px;
+    }
+  
+    .button-container {
+      padding: 8px 16px;
+    }
+  
+    .button-text {
+      font-size: 12px;
+    }
+  
+    .button-icon {
+      width: 24px;
+      height: 24px;
+    }
+  
+    .button-icon svg {
+      width: 12px;
+      height: 12px;
+    }
+  
+    .desktop-text {
+      display: none;
+    }
+  
+    .mobile-text {
+      display: flex;
+    }
+  
+    .mobile-footer {
+      padding: 80px 33px;
+    }
+  
+    .footer-buttons {
+      flex-direction: column;
+    }
+  
+    .footer-nav ul {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  }
+  

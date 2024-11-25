@@ -1,197 +1,396 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Design Lab</title>
+    <link rel="stylesheet" href="./styles/top.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Style Design Lab</title>
-  <link rel="stylesheet" href="./styles/top.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
+      .topic {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+      }
 
-    .topic {
-      writing-mode: vertical-rl;
-      text-orientation: upright;
-      font-size: 24px;
-      font-weight: bold;
-      margin: 0;
-    }
+      header .view-more:hover {
+        color: #aaa;
+      }
 
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
 
-    header .view-more:hover {
-      color: #aaa;
-    }
+      .card {
+        background-color: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+      }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
 
-    .card {
-      background-color: #1c1c1c;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-    }
+      .card-content {
+        padding: 10px 15px;
+      }
 
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+      .card-content h2 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
 
-    .card-content {
-      padding: 10px 15px;
-    }
+      .card-content p {
+        font-size: 14px;
+        margin: 5px 0;
+      }
 
-    .card-content h2 {
-      font-size: 18px;
-      margin: 10px 0;
-    }
+      .tag {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
 
-    .card-content p {
-      font-size: 14px;
-      margin: 5px 0;
-    }
-
-    .tag {
-      display: inline-block;
-      background-color: #333;
-      color: #fff;
-      font-size: 12px;
-      padding: 5px 10px;
-      border-radius: 4px;
-      margin-top: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Header Section -->
-  <header style="padding: 0px">
-    <nav>
-      <div style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 91px;
-            padding-bottom: 91px;
-            padding-left: 120px;
-            padding-right: 120px;
-          ">
-        <div>
-          <div style="display: flex; align-items: center">
-            <div>
-              <img src="./assets/images/style-design-logo.png" alt="" style="height: 70px" />
-            </div>
-            <div style="padding-left: 20px">
-              <img src="./assets/images/style-design-text.png" alt="" style="height: 49.83px; width: 316px" />
-            </div>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <div class="header-container">
+          <a href="../index.html" class="logo-container">
+            <img
+              src="../assets/images/style-design-logo.png"
+              alt="Style Design Logo"
+              height="70"
+            />
+            <img
+              class="desktop-text"
+              src="../assets/images/style-design-text.png"
+              alt="Style Design Text"
+              height="49.83"
+              width="316"
+            />
+          </a>
+          <div class="nav-icons">
+            <img
+              src="../assets/images/mail.png"
+              alt="Mail"
+              width="40"
+              height="30"
+            />
+            <img
+              src="../assets/images/call-icon.png"
+              alt="Call"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../assets/images/toggle-icon.png"
+              alt="Menu"
+              width="40"
+              height="23"
+              class="menu-toggle"
+            />
           </div>
         </div>
-        <div>
-          <div style="display: flex; align-items: center">
-            <div>
-              <img src="./assets/images/mail.png" alt="" style="width: 40px; height: 30px" />
+      </nav>
+    </header>
+    <section class="nav-popup">
+      <div class="fullscreen-menu">
+        <div class="fullscreen-menu-overlay"></div>
+        <div class="content">
+          <div class="menu-padding">
+            <div class="close-menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M2 2L30.2843 30.2843"
+                  stroke="#F0F3F5"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.85742 30.1421L30.1417 1.85782"
+                  stroke="#F0F3F5"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
-            <div style="padding-left: 72px; padding-right: 72px">
-              <a href="tel:055-270-1405" style="text-decoration: none; color: #000000">
-                <img src="./assets/images/icons/phone.svg" alt="" style="width: 40px; height: 30px" />
-              </a>
+          </div>
+
+          <div style="padding-top: 10rem" class="centered">
+            <div class="catalog-container">
+              <div class="catalog-item">
+                <p style="text-align: center">資料請求</p>
+              </div>
+              <div class="catalog-item" style="margin: 40px 0">
+                <p style="text-align: center">資料請求</p>
+              </div>
+              <div class="catalog-item">
+                <p style="text-align: center">資料請求</p>
+              </div>
+
+              <div class="desktop-text" style="padding-top: 80px">
+                <div class="centered">
+                  <i
+                    class="fa-brands fa-instagram fa-2x"
+                    style="color: var(--primary-text)"
+                  ></i>
+                  <img
+                    src="../assets/images/at-home.png"
+                    alt="At Home"
+                    style="padding-left: 40px"
+                  />
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="./assets/images/mail.png" alt="" style="width: 40px; height: 30px" />
+            <div style="width: 992px">
+              <div>
+                <h2>Style Design Lab</h2>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 621px;
+                    padding-top: 105px;
+                  "
+                >
+                  <div>
+                    <a
+                      href="./../company/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >COMPANY</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../work/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >WORKS</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../work-flow/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >WORK FLOW</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 621px;
+                  "
+                >
+                  <div>
+                    <a
+                      href="./../topics/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >TOPICS</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../recruit/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >RECRUIT</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../contact/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >CONTACT</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div style="text-align: center">
+            <p style="color: #f0f3f5">©︎Style Design Lab.</p>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </section>
+    <!-- end of header section -->
 
-  <!-- hero section -->
-  <section style="
-        background-image: url(./assets/images/hero-image.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 1360px;
-      ">
-    <div style="
-          display: flex;
-          align-items: end;
-          height: 100%;
-          padding-bottom: 176px;
-          padding-left: 117px;
-          padding-right: 117px;
-        ">
-      <h2>Style Design Lab</h2>
-    </div>
-  </section>
-
-  <!--  -->
-  <section>
-    <div style="padding-top: 406px">
-      <div style="display: flex; justify-content: center">
-        <img src="./assets/images/hand-drawn.png" alt="手描きキャッチコピー" style="width: 510px" />
-      </div>
-    </div>
-  </section>
-
-  <!-- style design text section -->
-  <section style="display: flex; justify-content: center; padding-top: 120px">
-    <div style="width: 637px">
-      <h2 style="text-align: center">Style Design Lab</h2>
-      <h3 style="text-align: center">
-        － 暮らしを描き 新たなアイデアを生み出す場所 －
-      </h3>
-      <div style="padding-top: 40px">
-        <p>
-          私たちは見えない想いに寄り添い、想い描く暮らしを共に1棟の住宅というカタチで表現します。
-        </p>
-        <p>
-          専門的なアドバイスやサポートができるように、大工・建築士・不動産スタッフ・エクステリア技師を揃え、一人ひとりにあった最適なプランのご提案が可能です。
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding-top: 400px">
-    <div>
-      <img src="./assets/images/import-photo2.png" alt="" style="height: 880px; width: -webkit-fill-available" />
-    </div>
-  </section>
-
-
-  <section style="background-color: #3C3D3D;">
-    <div style="display: flex;" >
+    <!-- hero section -->
+    <section class="hero-section">
       <div>
-        <h1 class="topic">TOPICE</h1>
-
+        <h2>Style Design Lab</h2>
       </div>
+    </section>
 
+    <!--  -->
+    <section>
+      <div style="padding-top: 406px">
+        <div style="display: flex; justify-content: center">
+          <img
+            src="./assets/images/hand-drawn.png"
+            alt="手描きキャッチコピー"
+            style="width: 510px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- style design text section -->
+    <section class="section-center">
       <div>
+        <h2 style="text-align: center">Style Design Lab</h2>
+        <h3 style="text-align: center">
+          － 暮らしを描き 新たなアイデアを生み出す場所 －
+        </h3>
+        <div style="padding-top: 40px">
+          <p>
+            私たちは見えない想いに寄り添い、想い描く暮らしを共に1棟の住宅というカタチで表現します。
+          </p>
+          <p>
+            専門的なアドバイスやサポートができるように、大工・建築士・不動産スタッフ・エクステリア技師を揃え、一人ひとりにあった最適なプランのご提案が可能です。
+          </p>
+        </div>
+        <button class="btn">
+          <a href="#">ABOUT</a>
+        </button>
+      </div>
+    </section>
+
+    <section style="padding-top: 400px">
+      <div>
+        <img
+          src="./assets/images/import-photo2.png"
+          alt=""
+          style="height: 880px; width: -webkit-fill-available"
+        />
+      </div>
+    </section>
+
+    <section style="background-color: #3c3d3d">
+      <div style="display: flex">
+        <div>
+          <h1 class="topic">TOPICE</h1>
+        </div>
+
         <div>
           <div>
-
-          </div>
-          <div>
-
-          </div>
-          <div>
-            
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>

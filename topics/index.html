@@ -1,202 +1,446 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Style Design Lab</title>
-    <link rel="stylesheet" href="./styles/top.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/top.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../main.js"></script>
 
-        <style>
-            .tab-container {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-    
-            .tabs {
-                display: flex;
-                gap: 16px;
-                
-            }
-    
-            .tab-button {
-                padding-left: 21px;
-                padding-right: 21px;
-                border: 1px solid #8E918C;
-                background: transparent;
-                cursor: pointer;
-                transition: background-color 0.3s;
-                height: 32px;
-                color: #8E918C;
-            }
-    
-            .tab-button.active {
-                background: #8E918C;
-                color: #F0F3F5;
-            }
-    
-            .tab-content {
-                display: none;
-                
-            }
-    
-            .tab-content.active {
-                display: block;
-            }
-    
-            .pagination {
-                display: flex;
-                justify-content: center;
-                gap: 10px;
-                margin-top: 20px;
-            }
-    
-            .pagination button {
-                padding: 5px 10px;
-                border: 1px solid #ddd;
-                background: #fff;
-                cursor: pointer;
-            }
-    
-            .pagination button.active {
-                background: #3C3D3D;
-                color: #F0F3F5;
-            }
-        </style>
+    <style>
+      .tab-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-</head>
+      .tabs {
+        display: flex;
+        gap: 16px;
+      }
 
-<body>
+      .tab-button {
+        padding-left: 21px;
+        padding-right: 21px;
+        border: 1px solid #8e918c;
+        background: transparent;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        height: 32px;
+        color: #8e918c;
+      }
+
+      .tab-button.active {
+        background: #8e918c;
+        color: #f0f3f5;
+      }
+
+      .tab-content {
+        display: none;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .pagination button {
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        background: #fff;
+        cursor: pointer;
+      }
+
+      .pagination button.active {
+        background: #3c3d3d;
+        color: #f0f3f5;
+      }
+    </style>
+  </head>
+
+  <body>
     <!-- Header Section -->
-    <header style="padding: 0px;">
-        <nav>
-            <div
-                style="display: flex; justify-content: space-between; align-items: center; padding-top: 91px; padding-bottom: 91px; padding-left: 120px; padding-right: 120px;">
-                <div>
-                    <div style="display: flex;  align-items: center;">
-                        <div>
-                            <img src="./assets/images/style-design-logo.png" alt="" style="height: 70px;" />
-                        </div>
-                        <div style="padding-left: 20px;">
-                            <img src="./assets/images/style-design-text.png" alt=""
-                                style="height: 49.83px; width: 316px;" />
-                        </div>
-                    </div>
-
-                </div>
-                <div>
-                    <div style="display: flex; align-items:center ;">
-                        <div>
-                            <img src="./assets/images/mail.png" alt="" style="width: 40px; height: 30px;" />
-                        </div>
-                        <div style="padding-left: 72px; padding-right: 72px;">
-                            <img src="./assets/images/call-icon.png" alt="" style="width: 40px; height: 40px;" />
-                        </div>
-                        <div>
-                            <img src="./assets/images/toggle-icon.png" alt="" style="width: 40px; height: 23px;" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+    <header>
+      <nav>
+        <div class="header-container">
+          <a href="../index.html" class="logo-container">
+            <img
+              src="../assets/images/style-design-logo.png"
+              alt="Style Design Logo"
+              height="70"
+            />
+            <img
+              class="desktop-text"
+              src="../assets/images/style-design-text.png"
+              alt="Style Design Text"
+              height="49.83"
+              width="316"
+            />
+          </a>
+          <div class="nav-icons">
+            <img
+              src="../assets/images/mail.png"
+              alt="Mail"
+              width="40"
+              height="30"
+            />
+            <img
+              src="../assets/images/call-icon.png"
+              alt="Call"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../assets/images/toggle-icon.png"
+              alt="Menu"
+              width="40"
+              height="23"
+              class="menu-toggle"
+            />
+          </div>
+        </div>
+      </nav>
     </header>
+    <section class="nav-popup">
+      <div class="fullscreen-menu">
+        <div class="fullscreen-menu-overlay"></div>
+        <div class="content">
+          <div class="menu-padding">
+            <div class="close-menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M2 2L30.2843 30.2843"
+                  stroke="#F0F3F5"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.85742 30.1421L30.1417 1.85782"
+                  stroke="#F0F3F5"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div style="padding-top: 10rem" class="centered">
+            <div class="catalog-container">
+              <div class="catalog-item">
+                <p style="text-align: center">資料請求</p>
+              </div>
+              <div class="catalog-item" style="margin: 40px 0">
+                <p style="text-align: center">資料請求</p>
+              </div>
+              <div class="catalog-item">
+                <p style="text-align: center">資料請求</p>
+              </div>
+
+              <div class="desktop-text" style="padding-top: 80px">
+                <div class="centered">
+                  <i
+                    class="fa-brands fa-instagram fa-2x"
+                    style="color: var(--primary-text)"
+                  ></i>
+                  <img
+                    src="../assets/images/at-home.png"
+                    alt="At Home"
+                    style="padding-left: 40px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div style="width: 992px">
+              <div>
+                <h2>Style Design Lab</h2>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 621px;
+                    padding-top: 105px;
+                  "
+                >
+                  <div>
+                    <a
+                      href="./../company/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >COMPANY</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../work/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >WORKS</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../work-flow/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >WORK FLOW</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 621px;
+                  "
+                >
+                  <div>
+                    <a
+                      href="./../topics/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >TOPICS</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../recruit/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >RECRUIT</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../contact/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >CONTACT</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center">
+            <p style="color: #f0f3f5">©︎Style Design Lab.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of header section -->
 
     <section>
-        <div style="width: 737px;">
-            <h1 style="font-size: 184px; color: #8E918C;">TOPICS</h1>
-            <h2 style="display: flex; justify-content: center; margin-top: -100px;">お知らせ</h2>
-        </div>
+      <div style="width: 737px">
+        <h1 style="font-size: 184px; color: #8e918c">TOPICS</h1>
+        <h2 style="display: flex; justify-content: center; margin-top: -100px">
+          お知らせ
+        </h2>
+      </div>
     </section>
 
-
-    <section style="margin-top: 160px;">
-        <div style="display: flex; justify-content: center; align-items: center;" >
-            <div style="padding-right: 64px;">
-                <p>CATEGORY</p>
-            </div>
-            <div>
-                <div class="tabs">
-                    <button class="tab-button active" data-tab="all">All</button>
-                    <button class="tab-button" data-tab="tab1">イベント情報</button>
-                    <button class="tab-button" data-tab="tab2">土地/売地</button>
-                    <button class="tab-button" data-tab="tab3">NEWS</button>
-                </div>
-            </div>
+    <section style="margin-top: 160px">
+      <div style="display: flex; justify-content: center; align-items: center">
+        <div style="padding-right: 64px">
+          <p>CATEGORY</p>
         </div>
+        <div>
+          <div class="tabs">
+            <button class="tab-button active" data-tab="all">All</button>
+            <button class="tab-button" data-tab="tab1">イベント情報</button>
+            <button class="tab-button" data-tab="tab2">土地/売地</button>
+            <button class="tab-button" data-tab="tab3">NEWS</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-    <section style="margin-top: 40px;">
-        <div style="margin-left: 320px; margin-right: 320px;">
-            <div id="all" class="tab-content active">
-                <div style="display: flex; justify-content: space-between;" >
-                    <div style="padding-top: 160px;">
-                        <div style="width: 373px;">
-                            <div>
-                                <img src="./assets/images/img1.png" alt="" style=" height: 467px;" />
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <p style="padding-top: 16px;">南アルプス市田島　販売開始</p>
-                                    <div >
-                                        <p style="border: 1px solid #8E918C; padding-top: 8px;">土地/売地</p>
-                                    </div>
-                                    
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="padding-top: 160px;">
-                        <div style="width: 373px;">
-                            <div>
-                                <img src="./assets/images/img1.png" alt="" style=" height: 467px;" />
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <p style="padding-top: 16px;">南アルプス市田島　販売開始</p>
-                                    <div >
-                                        <p style="border: 1px solid #8E918C; padding-top: 8px;">土地/売地</p>
-                                    </div>
-                                    
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="padding-top: 160px;">
-                        <div style="width: 373px;">
-                            <div>
-                                <img src="./assets/images/img1.png" alt="" style=" height: 467px;" />
-                            </div>
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div>
-                                    <p style="padding-top: 16px;">南アルプス市田島　販売開始</p>
-                                    <div >
-                                        <p style="border: 1px solid #8E918C; padding-top: 8px;">土地/売地</p>
-                                    </div>
-                                    
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section style="margin-top: 40px">
+      <div style="margin-left: 320px; margin-right: 320px">
+        <div id="all" class="tab-content active">
+          <div style="display: flex; justify-content: space-between">
+            <div style="padding-top: 160px">
+              <div style="width: 373px">
+                <div>
+                  <img
+                    src="../assets/images/img1.png"
+                    alt=""
+                    style="height: 467px"
+                  />
                 </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div>
+                    <p style="padding-top: 16px">南アルプス市田島　販売開始</p>
+                    <div>
+                      <p style="border: 1px solid #8e918c; padding-top: 8px">
+                        土地/売地
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-           
-            
+            <div style="padding-top: 160px">
+              <div style="width: 373px">
+                <div>
+                  <img
+                    src="../assets/images/img1.png"
+                    alt=""
+                    style="height: 467px"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div>
+                    <p style="padding-top: 16px">南アルプス市田島　販売開始</p>
+                    <div>
+                      <p style="border: 1px solid #8e918c; padding-top: 8px">
+                        土地/売地
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="padding-top: 160px">
+              <div style="width: 373px">
+                <div>
+                  <img
+                    src="../assets/images/img1.png"
+                    alt=""
+                    style="height: 467px"
+                  />
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div>
+                    <p style="padding-top: 16px">南アルプス市田島　販売開始</p>
+                    <div>
+                      <p style="border: 1px solid #8e918c; padding-top: 8px">
+                        土地/売地
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-       
+      </div>
     </section>
     <!-- <div class="tab-container">
         <div id="all" class="tab-content active">
@@ -224,136 +468,188 @@
         </div>
     </div> -->
 
+    <section style="margin-top: 400px; margin-bottom: 400px">
+      <div></div>
+    </section>
 
-   <section style="margin-top:400px; margin-bottom: 400px;">
-    <div>
-
-    </div>
-   </section>
-   
-    <footer style="background-color: #3C3D3D; padding-left: 124px; padding-right: 124px;">
-        <div style="padding-top: 160px; padding-bottom: 160px; ">
-            <div style="display: flex; justify-content: space-between; width: 1280px; margin: auto;">
-                <div style="width: 384px; background-color: #F0F3F5; ">
-                    <p style="padding-top: 28px; padding-bottom: 28px; text-align: center;">資料請求</p>
-                </div>
-                <div style="width: 384px; background-color: #F0F3F5;  ">
-                    <p style="padding-top: 28px; padding-bottom: 28px; text-align: center;">資料請求</p>
-                </div>
-                <div style="width: 384px; background-color: #F0F3F5; ">
-                    <p style="padding-top: 28px; padding-bottom: 28px; text-align: center;">資料請求</p>
-                </div>
-
-            </div>
-            <div style="height: 1px; background-color: #F0F3F5; margin-top: 80px; margin-bottom: 80px;">
-
-            </div>
-            <div>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <div>
-                        <i class="fa-brands fa-instagram fa-2x" style="color: #F0F3F5;"></i>
-                    </div>
-                    <div style="padding-left: 40px;">
-                        <img src="./assets/images/at-home.png" alt="alt-home" />
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div style="width: 1017px; margin: auto; padding-top: 84px;">
-                    <ul style="list-style: none; display: flex; justify-content: space-between; align-items: center; color: #F0F3F5;">
-                        <li>HOME</li>
-                        <li>CONPANY</li>
-                        <li>WORKS</li>
-                        <li>WORK FLOW</li>
-                        <li>TOPICS</li>
-                        <li>RECRUIT</li>
-                        <li>CONTACT</li>
-                    </ul>
-                </div>
-            </div>
+    <footer
+      style="
+        background-color: #3c3d3d;
+        padding-left: 124px;
+        padding-right: 124px;
+      "
+    >
+      <div style="padding-top: 160px; padding-bottom: 160px">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            width: 1280px;
+            margin: auto;
+          "
+        >
+          <div style="width: 384px; background-color: #f0f3f5">
+            <p
+              style="
+                padding-top: 28px;
+                padding-bottom: 28px;
+                text-align: center;
+              "
+            >
+              資料請求
+            </p>
+          </div>
+          <div style="width: 384px; background-color: #f0f3f5">
+            <p
+              style="
+                padding-top: 28px;
+                padding-bottom: 28px;
+                text-align: center;
+              "
+            >
+              資料請求
+            </p>
+          </div>
+          <div style="width: 384px; background-color: #f0f3f5">
+            <p
+              style="
+                padding-top: 28px;
+                padding-bottom: 28px;
+                text-align: center;
+              "
+            >
+              資料請求
+            </p>
+          </div>
         </div>
-        <div style="padding-bottom: 84px;">
-            <p style="color: #F0F3F5; text-align: center;">©︎Style Design Lab.</p>
+        <div
+          style="
+            height: 1px;
+            background-color: #f0f3f5;
+            margin-top: 80px;
+            margin-bottom: 80px;
+          "
+        ></div>
+        <div>
+          <div
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <div>
+              <i
+                class="fa-brands fa-instagram fa-2x"
+                style="color: #f0f3f5"
+              ></i>
+            </div>
+            <div style="padding-left: 40px">
+              <img src="../assets/images/at-home.png" alt="alt-home" />
+            </div>
+          </div>
         </div>
+        <div>
+          <div style="width: 1017px; margin: auto; padding-top: 84px">
+            <ul
+              style="
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: #f0f3f5;
+              "
+            >
+              <li>HOME</li>
+              <li>CONPANY</li>
+              <li>WORKS</li>
+              <li>WORK FLOW</li>
+              <li>TOPICS</li>
+              <li>RECRUIT</li>
+              <li>CONTACT</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="padding-bottom: 84px">
+        <p style="color: #f0f3f5; text-align: center">©︎Style Design Lab.</p>
+      </div>
     </footer>
 
     <script>
-        const tabButtons = document.querySelectorAll('.tab-button');
-        const tabContents = document.querySelectorAll('.tab-content');
+      const tabButtons = document.querySelectorAll(".tab-button");
+      const tabContents = document.querySelectorAll(".tab-content");
 
-        // Sample data for all tabs
-        const tabData = {
-            tab1: Array.from({length: 20}, (_, i) => `Tab 1 Item ${i + 1}`),
-            tab2: Array.from({length: 15}, (_, i) => `Tab 2 Item ${i + 1}`),
-            tab3: Array.from({length: 10}, (_, i) => `Tab 3 Item ${i + 1}`)
-        };
+      // Sample data for all tabs
+      const tabData = {
+        tab1: Array.from({ length: 20 }, (_, i) => `Tab 1 Item ${i + 1}`),
+        tab2: Array.from({ length: 15 }, (_, i) => `Tab 2 Item ${i + 1}`),
+        tab3: Array.from({ length: 10 }, (_, i) => `Tab 3 Item ${i + 1}`),
+      };
 
-        // Combine all data for "All" tab
-        const allData = [
-            ...tabData.tab1.map(item => ({ tab: 'Tab 1', content: item })),
-            ...tabData.tab2.map(item => ({ tab: 'Tab 2', content: item })),
-            ...tabData.tab3.map(item => ({ tab: 'Tab 3', content: item }))
-        ];
+      // Combine all data for "All" tab
+      const allData = [
+        ...tabData.tab1.map((item) => ({ tab: "Tab 1", content: item })),
+        ...tabData.tab2.map((item) => ({ tab: "Tab 2", content: item })),
+        ...tabData.tab3.map((item) => ({ tab: "Tab 3", content: item })),
+      ];
 
-        const itemsPerPage = 5;
-        const currentPages = {
-            all: 1,
-            tab1: 1,
-            tab2: 1,
-            tab3: 1
-        };
+      const itemsPerPage = 5;
+      const currentPages = {
+        all: 1,
+        tab1: 1,
+        tab2: 1,
+        tab3: 1,
+      };
 
-        function showPage(tabId, page) {
-            const data = tabId === 'all' ? allData : tabData[tabId];
-            const start = (page - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
-            const pageItems = data.slice(start, end);
+      function showPage(tabId, page) {
+        const data = tabId === "all" ? allData : tabData[tabId];
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        const pageItems = data.slice(start, end);
 
-            const contentDiv = document.getElementById(`${tabId}-content`);
-            if (tabId === 'all') {
-                contentDiv.innerHTML = pageItems.map(item => 
-                    `<p>${item.tab} - ${item.content}</p>`
-                ).join('');
-            } else {
-                contentDiv.innerHTML = pageItems.map(item => `<p>${item}</p>`).join('');
-            }
-
-            updatePagination(tabId, page, data.length);
+        const contentDiv = document.getElementById(`${tabId}-content`);
+        if (tabId === "all") {
+          contentDiv.innerHTML = pageItems
+            .map((item) => `<p>${item.tab} - ${item.content}</p>`)
+            .join("");
+        } else {
+          contentDiv.innerHTML = pageItems
+            .map((item) => `<p>${item}</p>`)
+            .join("");
         }
 
-        function updatePagination(tabId, currentPage, totalItems) {
-            const totalPages = Math.ceil(totalItems / itemsPerPage);
-            const paginationDiv = document.getElementById(`${tabId}-pagination`);
-            
-            let paginationHTML = '';
-            for(let i = 1; i <= totalPages; i++) {
-                paginationHTML += `
-                    <button class="${i === currentPage ? 'active' : ''}" 
+        updatePagination(tabId, page, data.length);
+      }
+
+      function updatePagination(tabId, currentPage, totalItems) {
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        const paginationDiv = document.getElementById(`${tabId}-pagination`);
+
+        let paginationHTML = "";
+        for (let i = 1; i <= totalPages; i++) {
+          paginationHTML += `
+                    <button class="${i === currentPage ? "active" : ""}" 
                             onclick="showPage('${tabId}', ${i})">${i}</button>
                 `;
-            }
-            paginationDiv.innerHTML = paginationHTML;
         }
+        paginationDiv.innerHTML = paginationHTML;
+      }
 
-        // Initialize all tabs with their first page
-        showPage('all', 1);
-        Object.keys(tabData).forEach(tabId => {
-            showPage(tabId, 1);
+      // Initialize all tabs with their first page
+      showPage("all", 1);
+      Object.keys(tabData).forEach((tabId) => {
+        showPage(tabId, 1);
+      });
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Remove active class from all buttons and contents
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          tabContents.forEach((content) => content.classList.remove("active"));
+
+          // Add active class to clicked button and corresponding content
+          button.classList.add("active");
+          const tabId = button.getAttribute("data-tab");
+          document.getElementById(tabId).classList.add("active");
         });
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons and contents
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                tabContents.forEach(content => content.classList.remove('active'));
-
-                // Add active class to clicked button and corresponding content
-                button.classList.add('active');
-                const tabId = button.getAttribute('data-tab');
-                document.getElementById(tabId).classList.add('active');
-            });
-        });
+      });
     </script>
-</body>
-
+  </body>
 </html>

@@ -12,77 +12,256 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../main.js"></script>
   </head>
 
   <body>
     <!-- Header Section -->
-    <header
-      style="
-        padding: 0px;
-        background-image: url(./assets/images/works-hero.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 1080px;
-      "
-    >
+    <header>
       <nav>
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 91px;
-            padding-bottom: 91px;
-            padding-left: 120px;
-            padding-right: 120px;
-          "
-        >
-          <div>
-            <div style="display: flex; align-items: center">
-              <div>
-                <img
-                  src="./assets/images/style-design-logo.png"
-                  alt=""
-                  style="height: 70px"
-                />
-              </div>
-              <div style="padding-left: 20px">
-                <img
-                  src="./assets/images/style-design-text.png"
-                  alt=""
-                  style="height: 49.83px; width: 316px"
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div style="display: flex; align-items: center">
-              <div>
-                <img
-                  src="./assets/images/mail.png"
-                  alt=""
-                  style="width: 40px; height: 30px"
-                />
-              </div>
-              <div style="padding-left: 72px; padding-right: 72px">
-                <img
-                  src="./assets/images/call-icon.png"
-                  alt=""
-                  style="width: 40px; height: 40px"
-                />
-              </div>
-              <div>
-                <img
-                  src="./assets/images/toggle-icon.png"
-                  alt=""
-                  style="width: 40px; height: 23px"
-                />
-              </div>
-            </div>
+        <div class="header-container">
+          <a href="../index.html" class="logo-container">
+            <img
+              src="../assets/images/style-design-logo.png"
+              alt="Style Design Logo"
+              height="70"
+            />
+            <img
+              class="desktop-text"
+              src="../assets/images/style-design-text.png"
+              alt="Style Design Text"
+              height="49.83"
+              width="316"
+            />
+          </a>
+          <div class="nav-icons">
+            <img
+              src="../assets/images/mail.png"
+              alt="Mail"
+              width="40"
+              height="30"
+            />
+            <img
+              src="../assets/images/call-icon.png"
+              alt="Call"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../assets/images/toggle-icon.png"
+              alt="Menu"
+              width="40"
+              height="23"
+              class="menu-toggle"
+            />
           </div>
         </div>
       </nav>
     </header>
+    <section class="nav-popup">
+      <div class="fullscreen-menu">
+        <div class="fullscreen-menu-overlay"></div>
+        <div class="content">
+          <div class="menu-padding">
+            <div class="close-menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M2 2L30.2843 30.2843"
+                  stroke="#F0F3F5"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M1.85742 30.1421L30.1417 1.85782"
+                  stroke="#F0F3F5"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div style="padding-top: 10rem" class="centered">
+            <div class="catalog-container">
+              <div class="catalog-item">
+                <p style="text-align: center">資料請求</p>
+              </div>
+              <div class="catalog-item" style="margin: 40px 0">
+                <p style="text-align: center">資料請求</p>
+              </div>
+              <div class="catalog-item">
+                <p style="text-align: center">資料請求</p>
+              </div>
+
+              <div class="desktop-text" style="padding-top: 80px">
+                <div class="centered">
+                  <i
+                    class="fa-brands fa-instagram fa-2x"
+                    style="color: var(--primary-text)"
+                  ></i>
+                  <img
+                    src="../assets/images/at-home.png"
+                    alt="At Home"
+                    style="padding-left: 40px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div style="width: 992px">
+              <div>
+                <h2>Style Design Lab</h2>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 621px;
+                    padding-top: 105px;
+                  "
+                >
+                  <div>
+                    <a
+                      href="./../company/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >COMPANY</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../work/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >WORKS</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../work-flow/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >WORK FLOW</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 621px;
+                  "
+                >
+                  <div>
+                    <a
+                      href="./../topics/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >TOPICS</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../recruit/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >RECRUIT</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      href="./../contact/index.html"
+                      style="
+                        color: #f0f3f5;
+                        font-family: Koburina Gothic Std;
+                        font-size: 28px;
+                        font-weight: 300;
+                        line-height: 56px;
+                        letter-spacing: 4.48px;
+                        text-decoration: none;
+                        border-bottom: 1px solid transparent;
+                        transition: border-bottom-color 0.3s;
+                      "
+                      onmouseover="this.style.borderBottomColor='#F0F3F5'"
+                      onmouseout="this.style.borderBottomColor='transparent'"
+                      >CONTACT</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center">
+            <p style="color: #f0f3f5">©︎Style Design Lab.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of header section -->
 
     <section style="margin-top: 64px">
       <div style="padding-left: 121px; padding-right: 121px">
@@ -104,7 +283,7 @@
       <div style="padding-left: 121px; padding-right: 121px">
         <div>
           <img
-            src="./assets/images/wrok-detail1.png"
+            src="../assets/images/wrok-detail1.png"
             alt=""
             style="height: 1119px"
           />
@@ -116,7 +295,7 @@
       <div style="padding-left: 121px; padding-right: 121px">
         <div style="display: flex; justify-content: end">
           <img
-            src="./assets/images/work-detail2.png"
+            src="../assets/images/work-detail2.png"
             style="height: 842px"
             alt=""
           />
@@ -127,7 +306,7 @@
       <div style="padding-left: 121px; padding-right: 121px">
         <div style="display: flex; justify-content: start">
           <img
-            src="./assets/images/work-detail3.png"
+            src="../assets/images/work-detail3.png"
             style="height: 842px"
             alt=""
           />
@@ -138,7 +317,7 @@
       <div style="padding-left: 121px; padding-right: 121px">
         <div style="display: flex; justify-content: end">
           <img
-            src="./assets/images/work-detail4.png"
+            src="../assets/images/work-detail4.png"
             style="height: 842px"
             alt=""
           />
@@ -149,7 +328,7 @@
       <div style="padding-left: 121px; padding-right: 121px">
         <div style="display: flex; justify-content: start">
           <img
-            src="./assets/images/work-detail5.png"
+            src="../assets/images/work-detail5.png"
             style="height: 842px"
             alt=""
           />
@@ -160,7 +339,7 @@
       <div style="padding-left: 121px; padding-right: 121px">
         <div style="display: flex; justify-content: end">
           <img
-            src="./assets/images/work-detail6.png"
+            src="../assets/images/work-detail6.png"
             style="height: 842px"
             alt=""
           />
@@ -171,7 +350,7 @@
       <div style="padding-left: 121px; padding-right: 121px">
         <div style="display: flex; justify-content: start">
           <img
-            src="./assets/images/work-detail7.png"
+            src="../assets/images/work-detail7.png"
             style="height: 842px"
             alt=""
           />
@@ -254,7 +433,7 @@
               ></i>
             </div>
             <div style="padding-left: 40px">
-              <img src="./assets/images/at-home.png" alt="alt-home" />
+              <img src="../assets/images/at-home.png" alt="alt-home" />
             </div>
           </div>
         </div>

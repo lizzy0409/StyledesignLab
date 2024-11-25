@@ -4,20 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Style Design Lab</title>
-    <link rel="stylesheet" href="./styles/top.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./../style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../style.css" />
-    <script src="../main.js"></script>
   </head>
-
   <body>
-    <!-- Header Section -->
     <header>
       <nav>
         <div class="header-container">
@@ -261,178 +255,160 @@
         </div>
       </div>
     </section>
-    <!-- end of header section -->
-
-    <section>
-      <div class="container">
+    <main>
+      <section>
         <div>
-          <h2>南アルプス市六科　販売開始</h2>
-          <div style="border: 1px solid #8e918c"></div>
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              padding-top: 16px;
-            "
-          >
-            <div style="border: 1px solid #8e918c">
-              <p style="padding-left: 21px; padding-right: 21px">土地/売地</p>
+          <h1 class="main-title">CONTACT</h1>
+          <h2 style="text-align: center; margin-top: -140px; max-width: 737px">
+            お問い合わせ
+          </h2>
+        </div>
+      </section>
+
+      <section class="catlog-section">
+        <div class="container" style="max-width: 800px; text-align: center">
+          <div class="catlog-text">
+            <h2>CONTACT</h2>
+            <h3>THANKS</h3>
+            <div style="padding-top: 56px">
+              <p>お問い合わせありがとうございました。</p>
+              <p>
+                お問い合わせ内容を確認次第、担当者よりご連絡させていただきます。
+              </p>
             </div>
-            <div>
-              <p>2024.9.2</p>
-            </div>
           </div>
-          <div style="padding-top: 120px">
-            <img src="../assets/images/topicDetail.png" alt="topics-detail" />
-          </div>
-          <div
-            style="
-              max-width: 300px;
-              margin: auto;
-              padding-top: 169px;
-              padding-bottom: 200px;
-            "
-          >
-            <p>
-              南アルプス市内、八田エリアで約70坪の土地の販売を開始いたしました。
-            </p>
-            <p>
-              建築条件はついておりませんので、お好きなハウスメーカーや工務店で建築が可能です。
-            </p>
-            <p style="padding-top: 16px">◇ここがポイント◇</p>
-            <p>・建築プランの幅も広がる約70坪の整形地。</p>
-            <p>・売主様費用負担にて「上水道引込、下水道引込、測量」を実施。</p>
-            <p>・北側は遮るものが無く、晴れた日には八ヶ岳も望めそうです。</p>
-            <p>
-              建築相談、資金計画、住宅ローン等のご相談も承りますので、お気軽にご相談、お問合せください。
-            </p>
-          </div>
-          <div style="border: 1px solid #8e918c"></div>
 
           <div
+            class="top-button"
             style="
+              background-color: var(--primary-bg);
               display: flex;
+              align-items: center;
               justify-content: space-between;
-              padding-top: 120px;
             "
           >
-            <div>
-              <p>NEXT</p>
+            <div style="flex: 1; text-align: center">
+              <p style="color: var(--primary-text); margin: 0">TOP</p>
             </div>
-            <div>
-              <p>BACK</p>
+            <div class="button-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section style="margin-top: 232px; margin-bottom: 560px">
-      <div style="max-width: 1280px; margin: auto">
-        <div>
-          <p style="text-align: center">TOPICS</p>
+    <footer style="background-color: var(--primary-bg)">
+      <div
+        class="desktop-footer mobile-footer"
+        style="max-width: 1676px; margin: auto"
+      >
+        <div class="footer-buttons container">
+          <div class="footer-button">資料請求</div>
+          <div class="footer-button">資料請求</div>
+          <div class="footer-button">資料請求</div>
         </div>
-      </div>
-    </section>
 
-    <footer
-      style="
-        background-color: #3c3d3d;
-        padding-left: 124px;
-        padding-right: 124px;
-      "
-    >
-      <div style="padding-top: 160px; padding-bottom: 160px">
-        <div
+        <hr
           style="
-            display: flex;
-            justify-content: space-between;
-            width: 1280px;
-            margin: auto;
+            border: none;
+            height: 1px;
+            background-color: var(--primary-text);
+            margin: 80px 0;
+          "
+        />
+
+        <div class="desktop-text" style="text-align: center">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 40px;
+            "
+          >
+            <i
+              class="fa-brands fa-instagram fa-2x"
+              style="color: var(--primary-text)"
+            ></i>
+            <img src="../assets/images/at-home.png" alt="At Home" />
+          </div>
+        </div>
+        <div class="mobile-view" style="text-align: center">
+          <div>
+            <i
+              class="fa-brands fa-instagram fa-2x"
+              style="color: var(--primary-text)"
+            ></i>
+          </div>
+          <div style="padding-top: 16px">
+            <img src="../assets/images/at-home.png" alt="At Home" />
+          </div>
+        </div>
+
+        <nav
+          class="footer-nav desktop-text"
+          style="max-width: 1017px; margin: auto; padding-top: 84px"
+        >
+          <ul>
+            <li>HOME</li>
+            <li>CONPANY</li>
+            <li>WORKS</li>
+            <li>WORK FLOW</li>
+            <li>TOPICS</li>
+            <li>RECRUIT</li>
+            <li>CONTACT</li>
+          </ul>
+        </nav>
+
+        <div
+          class="mobile-text"
+          style="
+            justify-content: space-around;
+            padding-top: 80px;
+            color: var(--primary-text);
           "
         >
-          <div style="width: 384px; background-color: #f0f3f5">
-            <p
-              style="
-                padding-top: 28px;
-                padding-bottom: 28px;
-                text-align: center;
-              "
-            >
-              資料請求
-            </p>
-          </div>
-          <div style="width: 384px; background-color: #f0f3f5">
-            <p
-              style="
-                padding-top: 28px;
-                padding-bottom: 28px;
-                text-align: center;
-              "
-            >
-              資料請求
-            </p>
-          </div>
-          <div style="width: 384px; background-color: #f0f3f5">
-            <p
-              style="
-                padding-top: 28px;
-                padding-bottom: 28px;
-                text-align: center;
-              "
-            >
-              資料請求
-            </p>
-          </div>
-        </div>
-        <div
-          style="
-            height: 1px;
-            background-color: #f0f3f5;
-            margin-top: 80px;
-            margin-bottom: 80px;
-          "
-        ></div>
-        <div>
-          <div
-            style="display: flex; justify-content: center; align-items: center"
-          >
-            <div>
-              <i
-                class="fa-brands fa-instagram fa-2x"
-                style="color: #f0f3f5"
-              ></i>
-            </div>
-            <div style="padding-left: 40px">
-              <img src="../assets/images/at-home.png" alt="alt-home" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div style="width: 1017px; margin: auto; padding-top: 84px">
-            <ul
-              style="
-                list-style: none;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: #f0f3f5;
-              "
-            >
-              <li>HOME</li>
-              <li>CONPANY</li>
-              <li>WORKS</li>
-              <li>WORK FLOW</li>
-              <li>TOPICS</li>
-              <li>RECRUIT</li>
-              <li>CONTACT</li>
-            </ul>
-          </div>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="padding-bottom: 11px">HOME</li>
+            <li style="padding-bottom: 11px">WORKS</li>
+            <li style="padding-bottom: 11px">TOPICS</li>
+            <li style="padding-bottom: 11px">CONTACT</li>
+          </ul>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="padding-bottom: 11px">CONPANY</li>
+            <li style="padding-bottom: 11px">WORK FLOW</li>
+            <li style="padding-bottom: 11px">RECRUIT</li>
+          </ul>
         </div>
       </div>
-      <div style="padding-bottom: 84px">
-        <p style="color: #f0f3f5; text-align: center">©︎Style Design Lab.</p>
+
+      <div style="text-align: center; color: var(--primary-text)">
+        <p class="desktop-text" style="padding-bottom: 84px; margin: 0">
+          ©︎Style Design Lab.
+        </p>
+        <p
+          class="mobile-text"
+          style="padding-bottom: 63px; margin: 0; justify-content: center"
+        >
+          ©︎Style Design Lab.
+        </p>
       </div>
     </footer>
+
+    <script src="../main.js"></script>
   </body>
 </html>
