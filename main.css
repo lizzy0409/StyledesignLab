@@ -134,12 +134,12 @@ img {
   transform: translateY(-50%);
   width: 17px;
   height: 17px;
-  background: url("../imgs/icons/arrow-right.svg") no-repeat center;
+  background: url("assets/images/icons/arrow-right.svg") no-repeat center;
   transition: right 0.3s;
 }
 @media (max-width: 768px) {
   .btn1 > a::after {
-    background: url("../imgs/icons/arrow-right-sp.svg") no-repeat center;
+    background: url("assets/images/icons/arrow-right-sp.svg") no-repeat center;
   }
 }
 .btn2 {
@@ -264,7 +264,7 @@ img {
   transform: translateY(-50%);
   width: 56px;
   height: 56px;
-  background: url("../imgs/icons/next-btn-icon-fill.svg") no-repeat center;
+  background: url("assets/images/icons/next-btn-icon-fill.svg") no-repeat center;
   background-size: 56px 56px;
   transition: right 0.3s;
 }

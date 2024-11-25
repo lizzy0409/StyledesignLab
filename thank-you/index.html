@@ -37,12 +37,14 @@
               width="40"
               height="30"
             />
-            <img
-              src="../assets/images/call-icon.png"
-              alt="Call"
-              width="40"
-              height="40"
-            />
+            <a href="tel:055-270-1405">
+              <img
+                src="../assets/images/call-icon.png"
+                alt="Call"
+                width="40"
+                height="40"
+              />
+            </a>
             <img
               src="../assets/images/toggle-icon.png"
               alt="Menu"
@@ -303,100 +305,110 @@
     </main>
 
     <footer style="background-color: var(--primary-bg)">
-      <div
-        class="desktop-footer mobile-footer"
-        style="max-width: 1676px; margin: auto"
-      >
+      <div class="footer-container">
         <div class="footer-buttons container">
           <div class="footer-button">資料請求</div>
           <div class="footer-button">資料請求</div>
           <div class="footer-button">資料請求</div>
         </div>
 
-        <hr
+        <hr class="footer-divider" />
+
+        <div
+          class="footer-social desktop-text"
           style="
-            border: none;
-            height: 1px;
-            background-color: var(--primary-text);
-            margin: 80px 0;
+            display: inline-flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            gap: 20px;
           "
-        />
-
-        <div class="desktop-text" style="text-align: center">
-          <div
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              gap: 40px;
-            "
-          >
-            <i
-              class="fa-brands fa-instagram fa-2x"
-              style="color: var(--primary-text)"
-            ></i>
-            <img src="../assets/images/at-home.png" alt="At Home" />
-          </div>
-        </div>
-        <div class="mobile-view" style="text-align: center">
-          <div>
-            <i
-              class="fa-brands fa-instagram fa-2x"
-              style="color: var(--primary-text)"
-            ></i>
-          </div>
-          <div style="padding-top: 16px">
-            <img src="../assets/images/at-home.png" alt="At Home" />
-          </div>
-        </div>
-
-        <nav
-          class="footer-nav desktop-text"
-          style="max-width: 1017px; margin: auto; padding-top: 84px"
         >
+          <i
+            class="fa-brands fa-instagram fa-2x"
+            style="color: var(--primary-text)"
+          ></i>
+          <img
+            src="../assets/images/at-home.png"
+            alt="At Home"
+            style="margin: 0px"
+          />
+        </div>
+        <div
+          class="footer-social mobile-view"
+          style="
+            display: inline-flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <i
+            class="fa-brands fa-instagram fa-2x"
+            style="color: var(--primary-text)"
+          ></i>
+          <img
+            src="../assets/images/at-home.png"
+            alt="At Home"
+            style="margin: 0px"
+          />
+        </div>
+
+        <nav class="footer-nav desktop-text">
           <ul>
-            <li>HOME</li>
-            <li>CONPANY</li>
-            <li>WORKS</li>
-            <li>WORK FLOW</li>
-            <li>TOPICS</li>
-            <li>RECRUIT</li>
-            <li>CONTACT</li>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="../company/index.html">CONPANY</a></li>
+            <li>
+              <a href="../work/index.html">WORKS</a>
+            </li>
+            <li>
+              <a href="../work-flow/index.html">WORK FLOW</a>
+            </li>
+            <li>
+              <a href="../topics/index.html">TOPICS</a>
+            </li>
+            <li>
+              <a href="../recruit/index.html">RECRUIT</a>
+            </li>
+            <li>
+              <a href="../contact/index.html">CONTACT</a>
+            </li>
           </ul>
         </nav>
 
-        <div
-          class="mobile-text"
-          style="
-            justify-content: space-around;
-            padding-top: 80px;
-            color: var(--primary-text);
-          "
-        >
-          <ul style="list-style: none; padding: 0; margin: 0">
-            <li style="padding-bottom: 11px">HOME</li>
-            <li style="padding-bottom: 11px">WORKS</li>
-            <li style="padding-bottom: 11px">TOPICS</li>
-            <li style="padding-bottom: 11px">CONTACT</li>
+        <div class="footer-nav mobile-text">
+          <ul>
+            <li>
+              <a href="/index.html">HOME</a>
+            </li>
+            <li>
+              <a href="../work/index.html">WORKS</a>
+            </li>
+            <li>
+              <a href="../topics/index.html">TOPICS</a>
+            </li>
+            <li>
+              <a href="../contact/index.html">CONTACT</a>
+            </li>
           </ul>
-          <ul style="list-style: none; padding: 0; margin: 0">
-            <li style="padding-bottom: 11px">CONPANY</li>
-            <li style="padding-bottom: 11px">WORK FLOW</li>
-            <li style="padding-bottom: 11px">RECRUIT</li>
+          <ul>
+            <li>
+              <a href="../company/index.html">CONPANY</a>
+            </li>
+            <li>
+              <a href="../work-flow/index.html">WORK FLOW</a>
+            </li>
+            <li>
+              <a href="../recruit/index.html">RECRUIT</a>
+            </li>
           </ul>
         </div>
       </div>
 
-      <div style="text-align: center; color: var(--primary-text)">
-        <p class="desktop-text" style="padding-bottom: 84px; margin: 0">
-          ©︎Style Design Lab.
-        </p>
-        <p
-          class="mobile-text"
-          style="padding-bottom: 63px; margin: 0; justify-content: center"
-        >
-          ©︎Style Design Lab.
-        </p>
+      <div class="footer-copyright">
+        <p class="desktop-text">©︎ Style Design Lab.</p>
+        <p class="mobile-text">©︎ Style Design Lab.</p>
       </div>
     </footer>
 
